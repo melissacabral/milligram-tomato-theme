@@ -1,0 +1,104 @@
+// Tomato Theme by Melissa Cabral
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
+
+$dark-bg-color: #434c54;
+$font: "Roboto Slab", Georgia, serif;
+
+%reset{
+	font-size: 1.6em;
+	line-height: 1;
+	margin:0;
+	padding:0;
+	height:auto;
+	width:auto;
+	display: block;
+}
+
+%black-bar{
+	background-color: $dark-bg-color;
+	color: white;
+	padding: 2%;
+	@include mediumish{
+		display: flex;
+		justify-content: space-between;
+		align-items:center;
+	}
+}
+
+body {
+	margin: 0;
+	font-family:$font;
+}
+
+.hero {
+	text-align: center;
+	padding: 10vh 2vw;
+	background-color: lighten($color-primary,25);
+}
+
+.big-section {
+	@extend .container;
+	margin-top: 10vh;
+	margin-bottom: 10vh;
+}
+
+/* nav bar */
+.main-menu {
+	@extend %black-bar;
+	text-align: center;
+	
+	h1.logo {
+		@extend %reset;
+		font-weight: bold;
+		text-transform: uppercase;
+		a{
+			color:white;
+			display: inline-block;
+			padding:.5rem;
+			&:hover{
+					color:$color-primary;
+			}
+		}
+	}
+	.menu-links {
+		margin:0;
+		li {			
+			display: inline-block;
+			margin:0;
+			a {
+				margin-bottom:0;
+				font-size: 1.4rem;
+				color: white;
+				&:hover{
+					color:$color-primary;
+				}
+				
+			}
+		}
+	}
+}
+
+// Explore Search Form 
+.search input[type="search"],
+input[type="search"] + button {
+	display: inline;
+	width: auto;
+}
+
+// grid of posts
+.grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	grid-gap: 20px;
+	align-items: stretch;
+	&.thumbnail-grid{
+		grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+	}
+	& > * {
+		max-width: 100%;
+	}
+}
+.footer{
+	@extend %black-bar;
+}

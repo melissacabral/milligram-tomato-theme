@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Milligram Demo Theme SCSS Test</title>
+	<link rel="stylesheet" type="text/css" href="src/milligram.css">
+</head>
+<body>
+	<header id="site-header">
+		<nav class="main-menu">
+			<h1 class="logo"><a href="index.html">CSS Documentation</a></h1>
+			<ul class="menu-links">
+				<li><a class="button button-clear" href="html-tags.html">HTML Tags</a></li>
+				<li><a class="button button-clear" href="grid-layout.html">Grid Layout</a></li>
+				<li><a class="button button-clear" href="index.html">Example Page</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main id="content" class="wrapper">
+		<section class="big-section">
+			<h1>HTML Tags</h1>
+
+			<h2>Headings</h2>
+
+			<hr>
+
+			<h1>Heading one</h1>
+			<h2>Heading two</h2>
+			<h3>Heading Three</h3>
+			<h4>Heading Four</h4>
+			<h5>Heading five</h5>
+			<h6>Heading six</h6>
+
+			<h2>Paragraphs</h2>
+			<p>
+				Paragraph 1 <a href="#">Link Text</a> <abbr title="abbreviation">abbr</abbr> Lorem ipsum dolor <i>italic</i> sit amet, consectetur <em>emphasis</em> adipisicing elit, sed do eiusmod
+				tempor <b>bold</b> incididunt  ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				<u>underline</u> quis nostrud exercitation ullamco laboris <del>deleted</del> nisi ut aliquip ex ea commodo
+				consequat. <strong>strong</strong> Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+			<address>address tag <br>
+				123 fake st <br>
+				san diego, ca 92115
+			</address>
+			<figure class="float-right">
+				<img src="http://picsum.photos/id/103/300/200">
+				<figcaption>a .float-right figure with an image</figcaption>
+			</figure>
+			<p>
+				Paragraph 2 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+
+			<hr>
+
+			<h2>blockquotes</h2>
+			<blockquote>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<cite>citation</cite>
+			</blockquote>
+
+			<hr>
+			<h2>Buttons</h2>
+			<h3>anchor tags with .button class</h3>
+			<a class="button" href="#">link with .button</a>
+			<a class="button" href="#">link with .button</a>
+			<a class="button" href="#">link with .button</a>
+			<br>
+			<a class="button button-clear" href="#">link with .button-clear</a>
+			<a class="button button-clear" href="#">link with .button-clear</a>
+			<a class="button button-clear" href="#">link with .button-clear</a>
+			<br>
+			<a class="button button-outline" href="#">link with .button-outline</a>
+			<a class="button button-outline" href="#">link with .button-outline</a>
+			<a class="button button-outline" href="#">link with .button-outline</a>
+<br>	
+<h3>button element</h3>
+<button>button</button> 
+<button class="button-outline">button outline</button>
+<button class="button-clear">button clear</button>
+<br>
+<h3>form submit button</h3>
+<input type="submit" >
+<input type="submit" class="button-outline">
+<input type="submit" class="button-clear">
+
+			<hr>
+			<h2>Code with a really long line</h2>
+<pre><code>if( this == awesome  ){
+	do stuff();
+}
+Lorem ipsum dolor sit amet, 
+consectetur adipisicing elit, 
+sed do eiusmod
+	tab 1 tempor incididunt 
+		tab 2 ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+really long quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat nonproident, sunt in culpa qui officia deserunt mollit anim id est laborum.</code></pre>
+
+			<hr>
+			<h2>Forms</h2>
+			<form>
+				<fieldset>
+					<label for="nameField">Name</label>
+					<input type="text" placeholder="CJ Patoilo" id="nameField">
+					<label for="ageRangeField">Age Range</label>
+					<select id="ageRangeField">
+						<option value="0-13">0-13</option>
+						<option value="14-17">14-17</option>
+						<option value="18-23">18-23</option>
+						<option value="24+">24+</option>
+					</select>
+					<label for="commentField">Comment</label>
+					<textarea placeholder="Hi CJ …" id="commentField"></textarea>
+					<div class="float-right">
+						<input type="checkbox" id="confirmField">
+						<label class="label-inline" for="confirmField">Send a copy to yourself</label>
+					</div>
+					<input class="button-primary" type="submit" value="Send">
+				</fieldset>
+			</form>
+			<hr>
+			<h2>tables</h2>
+			<table>
+				<tr><th>head 1</th><th>head 2</th><th>head 3</th></tr>
+				<tr><td>cell 1</td><td>cell 2</td><td>cell 3</td></tr>
+				<tr><td>cell 1</td><td>cell 2</td><td>cell 3</td></tr>
+				<tr><td>cell 1</td><td>cell 2</td><td>cell 3</td></tr>
+			</table>
+
+			<table>
+
+				<tr><th>head 1</th><td>cell 2</td><td>cell 3</td></tr>
+				<tr><th>head 1</th><td>cell 2</td><td>cell 3</td></tr>
+				<tr><th>head 1</th><td>cell 2</td><td>cell 3</td></tr>
+				<tr><th>head 1</th><td>cell 2</td><td>cell 3</td></tr>		
+			</table>
+
+			<h2>lists</h2>
+
+			<ul>
+				<li>one</li>
+				<li>two</li>
+				<li>three
+					<ul>
+						<li>item a</li>
+						<li>item b</li>
+						<li>item c</li>
+						<li>item d</li>
+					</ul>
+				</li>
+				<li>four</li>
+			</ul>
+
+			<ol>
+				<li>one</li>
+				<li>two</li>
+				<li>three
+					<ul>
+						<li>item a</li>
+						<li>item b</li>
+						<li>item c</li>
+						<li>item d</li>
+					</ul>
+				</li>
+				<li>four</li>
+			</ol>
+
+			<dl>
+				<dt>term</dt>
+				<dd>definition Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</dd>
+				<dt>term</dt>
+				<dd>definition Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</dd>
+				<dt>term</dt>
+				<dd>definition Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</dd>
+			</dl>
+
+
+
+		</section>
+
+	</main>
+	<footer class="footer">
+
+		<div class="column floatleft">
+			<a class="title is-4" href="#">App Name</a>
+		</div>
+
+		<div class="column floatright">
+			<p class="subtitle is-6">&copy; 2019 Platt College. All rights reserved.</p>
+		</div>
+		
+
+	</footer>
+
+</body>
+</html>

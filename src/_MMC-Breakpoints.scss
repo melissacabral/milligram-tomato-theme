@@ -1,0 +1,30 @@
+// Small tablets and large smartphones (landscape view)
+$smallish: 550px;
+
+// Small tablets (portrait view)
+$mediumish: 760px;
+
+// Tablets and small desktops
+$largish: 1000px;
+
+// Small devices
+@mixin smallish {
+   @media (min-width: #{$smallish}) {
+       @content;
+   }
+}
+
+// Medium devices
+@mixin mediumish {
+   @media (min-width: #{$mediumish}) {
+       @content;
+   }
+}
+
+// Large devices
+@mixin largish {
+   @media (min-width: #{$largish}) {
+       @content;
+   }
+}
+
